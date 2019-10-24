@@ -1,7 +1,9 @@
+
 body {
   background-color: #ea5169;
   font-family: sans-serif;
   margin: 0;
+  width: auto;
 }
 
 header {
@@ -11,13 +13,24 @@ header {
 
 
 }
-@keyframes slide {
-  from  {
-    left: 0;
+
+@keyframes pop {
+  from {
+    opacity: 0;
   }
   to {
-    left: 35px;
+    opacity: 5%;
   }
+}
+
+@keyframes slide {
+  from  {
+     left: 0;
+  }
+  to {
+    right: 100px;
+  }
+
 }
 
 @keyframes roll {
@@ -30,32 +43,43 @@ header {
 }
 
 .pic-grid {
-  animation-name: slide;
-  animation-duration: 2s;
-  grid-template: auto /repeat(3, 40%);
-  background-color: rgb(174, 236, 83);
-  display: grid;
+  background-color: #ccc;
   margin: 0;
-  padding:  12%;
-  border: 4px;
-  border-image: url("https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/04/19/Pictures/_c62d39de-43bc-11e8-a5d3-1ef93e3dfeed.jpg");
-  
+  padding:  6%;
 
+}
+
+.color-grid {
+    justify-content: center;
+    background-color: rgb(50, 213, 52);
+    margin: 0;
+    padding: 2%;
+}
+
+.inside-grid {
+  animation-name: pop;
+  animation-duration: 8s;
+  grid-template: auto /repeat(3, 40%);
+  display: grid;
+  background-color: rgba(235, 226, 230, 0);
+  align-content: center;
+  height: auto;
+  width: auto;
 }
 
 .first-pic img {
   animation-name: roll;
   animation-duration: 2s;
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
 }
 
 .second-pic img {
   animation-name: roll;
   animation-duration: 2.5s;
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
 
 }
@@ -63,8 +87,8 @@ header {
 .third-pic img {
   animation-name: roll;
   animation-duration: 3s;
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
 
 }
