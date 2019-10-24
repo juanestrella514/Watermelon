@@ -45,66 +45,69 @@ header {
 .pic-grid {
   background-color: rgb(149, 218, 201);
   margin: 0;
-  padding: 6%;
-  border-image: url("https://images2.minutemediacdn.com/image/upload/c_crop,h_1399,w_2084,x_0,y_20/v1554918003/shape/mentalfloss/81904-istock-867774454.jpg?itok=i24LyQBh") ;
-  border:  5pt groove;
+  padding: 4%;
+  border:  6px groove;
   justify-content: center;
 
 
 }
 
 .color-grid {
-    align-content: center;
     background-color: rgb(50, 213, 52);
     margin: 0;
     padding: 2%;
-    border:  5pt groove;
+    border: 16pt dotted greenyellow;
 
 }
 
 .inside-grid {
   animation-name: pop;
   animation-duration: 8s;
-  grid-template: auto /repeat(4, 26%);
+  grid-template: 84px /repeat(4, 26.4%);
   display: grid;
   background-color: rgba(235, 226, 230, 0);
-  height: 300px;
+  height: auto;
   width: auto;
-
+  box-shadow: inset 6px -28px 70px -4px  #ea5169;
 
 }
 
-.first-pic img {
+
+
+
+
+.first-pic {
   animation-name: roll;
   animation-duration: 2s;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
+
 }
 
-.second-pic img {
+.second-pic  {
   animation-name: roll;
   animation-duration: 2.5s;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
 
 }
 
-.third-pic img {
+.third-pic  {
   animation-name: roll;
   animation-duration: 3s;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
 
 }
 
-.fourth-pic img {
+.fourth-pic {
   animation-name: roll;
   animation-duration: 3s;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
 
 }
@@ -115,6 +118,7 @@ p {
   font-size: 14pt;
 }
 
+/* bottom pics */
 .list {
   grid-template: auto / repeat(3, 12%);
   display: grid;
