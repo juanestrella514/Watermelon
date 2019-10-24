@@ -46,7 +46,9 @@ header {
   background-color: rgb(149, 218, 201);
   margin: 0;
   padding: 6%;
-  border-image: url("https://images2.minutemediacdn.com/image/upload/c_crop,h_1399,w_2084,x_0,y_20/v1554918003/shape/mentalfloss/81904-istock-867774454.jpg?itok=i24LyQBh") 30 rounds;
+  border-image: url("https://images2.minutemediacdn.com/image/upload/c_crop,h_1399,w_2084,x_0,y_20/v1554918003/shape/mentalfloss/81904-istock-867774454.jpg?itok=i24LyQBh") ;
+  border:  5pt groove;
+  justify-content: center;
 
 
 }
@@ -56,17 +58,20 @@ header {
     background-color: rgb(50, 213, 52);
     margin: 0;
     padding: 2%;
+    border:  5pt groove;
+    justify-content: center;
 }
 
 .inside-grid {
   animation-name: pop;
   animation-duration: 8s;
-  grid-template: auto /repeat(3, 40%);
+  grid-template: auto /repeat(3, 28%);
   display: grid;
   background-color: rgba(235, 226, 230, 0);
-  align-content: center;
-  height: auto;
+  height: 300px;
   width: auto;
+
+
 }
 
 .first-pic img {
