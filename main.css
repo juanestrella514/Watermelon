@@ -43,14 +43,16 @@ header {
 }
 
 .pic-grid {
-  background-color: #ccc;
+  background-color: rgb(149, 218, 201);
   margin: 0;
-  padding:  6%;
+  padding: 6%;
+  border-image: url("https://images2.minutemediacdn.com/image/upload/c_crop,h_1399,w_2084,x_0,y_20/v1554918003/shape/mentalfloss/81904-istock-867774454.jpg?itok=i24LyQBh") 30 rounds;
+
 
 }
 
 .color-grid {
-    justify-content: center;
+    align-content: center;
     background-color: rgb(50, 213, 52);
     margin: 0;
     padding: 2%;
@@ -99,6 +101,30 @@ p {
   font-size: 14pt;
 }
 
+.list {
+  grid-template: auto / repeat(3, 12%);
+  display: grid;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 13%;
+
+
+}
+.list img:nth-child(1) {
+  height: 200px;
+  width: auto;
+  border-radius: 53%;
+}
+.list img:nth-child(2) {
+  height: 200px;
+  width: auto;
+  border-radius: 50%;
+}
+.list img:nth-child(3) {
+  height: 200px;
+  width: auto;
+  border-radius: 53%;
+}
 footer {
   position: absolute;
   display: block;
@@ -106,7 +132,5 @@ footer {
   font-size: 10pt;
   font-weight: bold;
   position: bottom;
-
   background-color: rgb(54, 97, 31);
-
 }
