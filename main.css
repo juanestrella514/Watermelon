@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(154, 167, 151);
+  font-family: sans-serif;
+}
+
+header {
+  background-color: rgb(164, 27, 27);
+  padding: 15px;;
+}
+
+.pic-grid {
+  grid-template: grid;
+  display: flex;
+  margin: 0;
+  padding: 0 4%;
+}
+
+.first-pic img {
+  height: 250px;
+  width: 250px;
+
+}
+
+.second-pic img {
+  height: 250px;
+  width: 250px;
+}
+
+.third-pic img {
+  height: 250px;
+  width: 250px;
+}
