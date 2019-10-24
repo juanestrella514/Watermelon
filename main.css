@@ -59,13 +59,13 @@ header {
     margin: 0;
     padding: 2%;
     border:  5pt groove;
-    justify-content: center;
+
 }
 
 .inside-grid {
   animation-name: pop;
   animation-duration: 8s;
-  grid-template: auto /repeat(3, 28%);
+  grid-template: auto /repeat(4, 26%);
   display: grid;
   background-color: rgba(235, 226, 230, 0);
   height: 300px;
@@ -92,6 +92,15 @@ header {
 }
 
 .third-pic img {
+  animation-name: roll;
+  animation-duration: 3s;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+
+}
+
+.fourth-pic img {
   animation-name: roll;
   animation-duration: 3s;
   height: 300px;
