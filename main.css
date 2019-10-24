@@ -14,6 +14,11 @@ header {
 
 }
 
+h1  {
+  font-family: sans-serif;
+  color: #fff;
+}
+
 @keyframes pop {
   from {
     opacity: 0;
@@ -43,11 +48,10 @@ header {
 }
 
 .pic-grid {
-  background-color: rgb(149, 218, 201);
+  background-image: url("https://media.tenor.com/images/60fa84887afe27f9cfd3edd49b934670/tenor.gif");
   margin: 0;
   padding: 4%;
   border:  6px groove;
-  justify-content: center;
 
 
 }
@@ -55,7 +59,7 @@ header {
 .color-grid {
     background-color: rgb(50, 213, 52);
     margin: 0;
-    padding: 2%;
+    padding: 3px 3px 0px 3px;
     border: 16pt dotted greenyellow;
 
 }
@@ -63,12 +67,12 @@ header {
 .inside-grid {
   animation-name: pop;
   animation-duration: 8s;
-  grid-template: 84px /repeat(4, 26.4%);
+  grid-template: auto /repeat(4, 26.4%);
   display: grid;
-  background-color: rgba(235, 226, 230, 0);
-  height: auto;
+  height: 257px;
   width: auto;
-  box-shadow: inset 6px -28px 70px -4px  #ea5169;
+  box-shadow: inset 0px 10px 53px 22px #ea5169;
+align-items: stretch;
 
 }
 
@@ -80,17 +84,18 @@ header {
   animation-name: roll;
   animation-duration: 2s;
   height: 250px;
-  width: 250px;
-  border-radius: 50%;
-
+  width: 200px;
+  border-radius: 50px;
+  padding-left: 58px;
 }
 
 .second-pic  {
   animation-name: roll;
   animation-duration: 2.5s;
   height: 250px;
-  width: 250px;
-  border-radius: 50%;
+  width: 200px;
+  border-radius: 50px;
+  padding-left: 58px;
 
 }
 
@@ -98,17 +103,18 @@ header {
   animation-name: roll;
   animation-duration: 3s;
   height: 250px;
-  width: 250px;
-  border-radius: 50%;
-
+  width: 200px;
+  border-radius: 50px;
+  padding-left: 54px;
 }
 
 .fourth-pic {
   animation-name: roll;
   animation-duration: 3s;
   height: 250px;
-  width: 250px;
-  border-radius: 50%;
+  width: 200px;
+  border-radius: 50px;
+  padding-left: 16px;
 
 }
 
